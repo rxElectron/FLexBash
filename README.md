@@ -1,14 +1,14 @@
 # LEX Project by Reza Khodarahimi (EnhancedUXI)
 # پروژه لکس توسط رضا خدارحیمی
 
-## Overview | نمای کلی 🔍
+ Overview | نمای کلی 🔍
 
 This project implements a Bash command parser and analyzer using LEX for lexical analysis. The application provides a graphical interface for analyzing shell scripts and displaying detailed token breakdowns. The system features a modern GUI with theme selection, real-time token analysis, and comprehensive command recognition capabilities. It supports advanced syntax validation, detailed error reporting, and handles various token types including commands, operators, variables, and special characters. The project is designed to work seamlessly with both English and Persian text through bidirectional text support, making it a versatile tool for shell script analysis and development.
 
 این پروژه یک تجزیه‌کننده و تحلیل‌گر دستورات Bash را با استفاده از LEX برای تحلیل لغوی پیاده‌سازی می‌کند. برنامه یک رابط گرافیکی برای تحلیل اسکریپت‌های شل و نمایش جزئیات توکن‌ها ارائه می‌دهد. سیستم دارای رابط کاربری مدرن با قابلیت انتخاب تم، تحلیل توکن در زمان واقعی و قابلیت‌های جامع تشخیص دستورات است.
 
 <details>
-<summary>## Project Structure | ساختار پروژه 📁</summary>
+<summary> Project Structure | ساختار پروژه 📁</summary>
 
 | File | Description | توضیحات |
 |------|-------------|----------|
@@ -23,7 +23,7 @@ This project implements a Bash command parser and analyzer using LEX for lexical
 </details>
 
 <details>
-<summary>## Features | ویژگی‌ها ✨</summary>
+<summary> Features | ویژگی‌ها ✨</summary>
 
 1. **Modern GUI Interface | رابط کاربری مدرن** 🎯
     - Theme selection with multiple styles | انتخاب تم با سبک‌های متنوع
@@ -40,7 +40,7 @@ This project implements a Bash command parser and analyzer using LEX for lexical
 </details>
 
 <details>
-<summary>## Usage Instructions | دستورالعمل استفاده 📋</summary>
+<summary> Usage Instructions | دستورالعمل استفاده 📋</summary>
 
 1. **Setup Environment | راه‌اندازی محیط** 🛠️
 
@@ -64,7 +64,7 @@ python main.py
 </details>
 
 <details>
-<summary>## System Requirements | نیازمندی‌های سیستم 💻</summary>
+<summary> System Requirements | نیازمندی‌های سیستم 💻</summary>
 
 - **OS**: Arch Linux | سیستم‌عامل: آرچ لینوکس
 - **Python**: 3.8+ | پایتون: نسخه ۳.۸ به بالا
@@ -79,7 +79,7 @@ python main.py
 </details>
 
 <details>
-<summary>## Token Types | انواع توکن 🏷️</summary>
+<summary> Token Types | انواع توکن 🏷️</summary>
 
 - **Commands | دستورات** 💻
 - **Keywords | کلمات کلیدی** 🔑
@@ -92,7 +92,7 @@ python main.py
 </details>
 
 <details>
-<summary>## Analysis Features | ویژگی‌های تحلیل 📊</summary>
+<summary> Analysis Features | ویژگی‌های تحلیل 📊</summary>
 
 - Real-time syntax checking | بررسی سینتکس در لحظه 🔄
 - Error detection | تشخیص خطا ⚠️
