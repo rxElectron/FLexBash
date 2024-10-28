@@ -1,0 +1,126 @@
+
+@startuml
+
+title Bash Command Tokenizer Automata
+
+[*] --> Start
+
+state Start {
+    [*] --> Scanning
+}
+
+state Scanning {
+    [*] --> TokenDetection
+    TokenDetection --> Commands : Command Pattern
+    TokenDetection --> Keywords : Keyword Pattern
+    TokenDetection --> Operators : Operator Pattern
+    TokenDetection --> Variables : Variable Pattern
+    TokenDetection --> Literals : String/Number Pattern
+    TokenDetection --> Delimiters : Delimiter Pattern
+    TokenDetection --> Options : Option Pattern
+    TokenDetection --> Words : Word Pattern
+}
+
+state Commands {
+    state "Basic Commands" as BasicCmds {
+        cd
+        ls
+        rm
+        cp
+        mv
+        echo
+    }
+    
+    state "System Commands" as SysCmds {
+        systemctl
+        journalctl
+        pacman
+        sudo
+    }
+    
+    state "Text Processing" as TextCmds {
+        grep
+        awk
+        sed
+        cat
+    }
+}
+
+state Keywords {
+    if
+    then
+    else
+    for
+    while
+    function
+    return
+}
+
+state Operators {
+    state "Logical" as LogicalOps {
+        &&
+        ||
+        !
+    }
+    
+    state "Comparison" as CompOps {
+        ==
+        !=
+        <=
+        >=
+        <
+        >
+    }
+    
+    state "Arithmetic" as ArithOps {
+        +
+        -
+        *
+        /
+        =
+    }
+    
+    state "Redirection" as RedirOps {
+        >
+        >>
+        |
+    }
+}
+
+state Variables {
+    state "$name" as SimpleVar
+    state "${name}" as BracedVar
+    state "$1" as PosVar
+}
+
+state Literals {
+    state "\"string\"" as StringLit
+    state "123" as NumberLit
+}
+
+state Delimiters {
+    (
+    )
+    {
+    }
+    [
+    ]
+    ;
+    ,
+}
+
+state Options {
+    -option
+    --longoption
+}
+
+state Words {
+    identifier
+    path
+    argument
+}
+
+Scanning --> [*] : EOF
+TokenDetection --> Error : Invalid Token
+
+@enduml

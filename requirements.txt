@@ -1,0 +1,5 @@
+tk
+ttkbootstrap
+arabic_reshaper
+python-bidi
+arabic_reshaper
