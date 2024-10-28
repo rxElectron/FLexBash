@@ -1,5 +1,5 @@
-# LEX Project by Reza Khodarahimi (EnhancedUXI)
-# پروژه لکس توسط رضا خدارحیمی
+# LEX Project (EnhancedUXI)
+# پروژه لکس
 
  Overview | نمای کلی 🔍
 
